@@ -61,7 +61,9 @@
     If the caption data is user submitted or from some other untrusted source, then set this to true
     to prevent xss and other injection attacks.
      */
-    sanitizeTitle: false
+    sanitizeTitle: false,
+    radius: "5px"
+
   };
 
   Lightbox.prototype.option = function(options) {
@@ -108,6 +110,9 @@
     this.$container      = this.$lightbox.find('.lb-container');
     this.$image          = this.$lightbox.find('.lb-image');
     this.$nav            = this.$lightbox.find('.lb-nav');
+
+    this.$image.css("border-radius", this.options.radius);
+    this.$outerContainer.css("border-radius", this.options.radius);
 
     // Store css values for future lookup
     this.containerPadding = {

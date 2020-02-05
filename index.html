@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<title>Colobox</title>
 	<link rel="stylesheet" href="css/lightbox.css">
-	<script src="js/lightbox.js"></script>
-	<script src="js/lightbox-plus-jquery.js"></script>
+
 </head>
 <body>
 	<header>
@@ -17,12 +16,7 @@
 		<header><h2></h2></header>
 
 
-		<script>
-		    lightbox.option({
-		      'resizeDuration': 100,
-		      'wrapAround': true
-		    })
-		</script>
+
 
 
 		<div class="">
@@ -38,8 +32,19 @@
 			</a>
 		</div>
 
+
+
 	</section>
 
 	<footer><span id="signature"></span></footer>
+	<script src="js/jquery-pour-lightbox.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+			lightbox.option({
+				'resizeDuration': 100,
+				'wrapAround': true,
+				'radius': "200px"
+			})
+	</script>
 </body>
 </html>
